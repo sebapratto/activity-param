@@ -9,22 +9,19 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText etIngresa;
+    private EditText et1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        etIngresa = findViewById(R.id.etIngresa);
-
+        et1 = findViewById(R.id.et1);
     }
 
     public void PrimerBoton(View view){
-        String nombre = etIngresa.getText().toString();
-        Intent segundo =  new Intent(this, SegundoActivity.class);
-        segundo.putExtra("dato",nombre);
-        startActivity(segundo);
+        Intent segundoActivity =  new Intent(this, SegundoActivity.class);
+        segundoActivity.putExtra("param",et1.getText().toString());
+        startActivity(segundoActivity);
     }
 
 }

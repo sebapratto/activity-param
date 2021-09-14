@@ -18,14 +18,15 @@ public class SegundoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_segundo);
 
         tv2 = findViewById(R.id.tv2);
-        String param = getIntent().getStringExtra("dato");
+        String param = getIntent().getStringExtra("param");
         if(param.length() > 0){
-            tv2.setText("Hola! " + param);
+            param = "Hola! " + param;
+            tv2.setText(param);
         }
     }
 
     public void BotonAnterior(View view){
-        Intent anterior =  new Intent(this,MainActivity.class);
-        startActivity(anterior);
+        Intent anteriorActivity =  new Intent(this,MainActivity.class);
+        startActivity(anteriorActivity);
     }
 }
