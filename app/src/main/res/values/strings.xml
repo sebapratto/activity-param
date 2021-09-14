@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ActivityApp</string>
+    // Primer Activity
+    <string name="tvIngresa">Ingresa tu nombre</string>
+    <string name="btnSiguiente">Siguiente</string>
+    // Segundo Activity
+    <string name="tvSegundoActivity">No escribiste tu nombre</string>
+    <string name="btnAnterior">Anterior</string>
+</resources>
